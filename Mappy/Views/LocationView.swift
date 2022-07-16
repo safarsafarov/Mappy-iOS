@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class LocationsviewModel: ObservableObject {
+class LocationsViewModel: ObservableObject {
     @Published var locations: [Location]
     
     init(){
@@ -17,9 +17,14 @@ class LocationsviewModel: ObservableObject {
 }
 
 struct LocationView: View {
+    
+    @State private var vm = LocationsViewModel()
+    
     var body: some View {
         List {
-            ForEach(vm.locations)
+            ForEach(vm.locations) {
+                Text($0.name)
+            }
         }
     }
 }
