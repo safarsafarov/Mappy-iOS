@@ -15,7 +15,7 @@ struct MappyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LocationView()
+            LocationsView()
                 .environmentObject(vm)
         }
     }
