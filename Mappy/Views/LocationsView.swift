@@ -13,11 +13,12 @@ struct LocationsView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
     @State private var mapRegion: MKCoordinateRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 41.8902, longitude: 12.4922),
+        center: CLLocationCoordinate2D(latitude: 41.2995, longitude: 69.2401),
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     var body: some View {
         ZStack {
             Map(coordinateRegion: $mapRegion)
+                .ignoresSafeArea()
         }
     }
 }
