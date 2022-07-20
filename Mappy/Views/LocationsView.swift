@@ -19,9 +19,10 @@ struct LocationsView: View {
         ZStack {
             Map(coordinateRegion: $mapRegion)
                 .ignoresSafeArea()
+            
             VStack(spacing: 0) {
                 header
-                .padding()
+                    .padding()
                 Spacer()
             }
         }
@@ -35,7 +36,7 @@ struct LocationsView_Previews: PreviewProvider {
     }
 }
 
-extension LocationView {
+extension LocationsView {
     private var header: some View {
         VStack {
             Text(vm.mapLocations.name + ", " + vm.mapLocations.cityName)
