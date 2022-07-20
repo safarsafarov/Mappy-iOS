@@ -21,6 +21,7 @@ struct LocationsView: View {
                 .ignoresSafeArea()
             VStack(spacing: 0) {
                 header
+                
                 .padding()
                 Spacer()
             }
