@@ -14,7 +14,11 @@ class LocationsViewModel: ObservableObject {
     @Published var locations: [Location]
     
     //Current location on map
-    @Published var mapLocation: Location
+    @Published var mapLocations: Location {
+        didSet {
+            updateMapRegion(location: mapLocations)
+        }
+    }
     
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
@@ -23,6 +27,8 @@ class LocationsViewModel: ObservableObject {
         let locations = LocationsDataService.locations
         self.locations = locations
         self.mapLocations = locations.first!
+        
+        self.updateMapRegion(location: locations.first!)
     }
     
     private func updateMapRegion(location: Location) {
