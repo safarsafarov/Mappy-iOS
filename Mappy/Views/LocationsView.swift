@@ -13,19 +13,19 @@ struct LocationsView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
     @State private var mapRegion: MKCoordinateRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 41.2995, longitude: 69.2401),
+        center: CLLocationCoordinate2D(latitude: 41.8902, longitude: 12.4922),
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     var body: some View {
+        VStack(spacing: 0) {
+            header
+                .padding()
+            Spacer()
+        }
         ZStack {
             Map(coordinateRegion: $mapRegion)
                 .ignoresSafeArea()
-            
-            VStack(spacing: 0) {
-                header
-                    .padding()
-                Spacer()
-            }
         }
+        .frame(width: 150, height: 150, alignment: .topLeading)
     }
 }
 
@@ -45,6 +45,7 @@ extension LocationsView {
                     .foregroundColor(.primary)
                     .frame(height: 55)
                     .frame(maxWidth: .infinity)
+                    
                 }
                 .background(.thinMaterial)
                 .cornerRadius(10)
