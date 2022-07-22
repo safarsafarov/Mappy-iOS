@@ -13,7 +13,7 @@ struct LocationsListView: View {
     var body: some View {
         List {
             ForEach(vm.locations) { location in
-                
+                listRowView(location: location)
             }
         }
     }
@@ -26,7 +26,7 @@ struct LocationsListView_Previews: PreviewProvider {
 }
 
 extension LocationsListView {
-    private func listRowView() {
+    private func listRowView(location: Location) -> some View {
         HStack{
             if let imageName = location.imageNames.first {
                 Image(imageName)
