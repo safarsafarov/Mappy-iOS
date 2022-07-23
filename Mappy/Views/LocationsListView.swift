@@ -10,12 +10,19 @@ import SwiftUI
 struct LocationsListView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
+    
     var body: some View {
         List {
             ForEach(vm.locations) { location in
-                listRowView(location: location)
-                    .padding(.vertical, 4)
-                    .listRowBackground(Color.clear)
+                Button {
+                    vm.showNextLocation(location: location)
+                } label: {
+                    listRowView(location: location)
+                }
+                .padding(.vertical, 4)
+                .listRowBackground(Color.clear)
+                
+                    
             }
         }
         .listStyle(PlainListStyle())
