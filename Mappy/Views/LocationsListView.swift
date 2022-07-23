@@ -32,10 +32,12 @@ struct LocationsListView: View {
 struct LocationsListView_Previews: PreviewProvider {
     static var previews: some View {
         LocationsListView()
+            .environmentObject(LocationsViewModel())
     }
 }
 
-extension LocationsListView {
+extension
+LocationsListView {
     private func listRowView(location: Location) -> some View {
         HStack{
             if let imageName = location.imageNames.first {

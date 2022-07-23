@@ -36,10 +36,11 @@ class LocationsViewModel: ObservableObject {
     }
     
     private func updateMapRegion(location: Location) {
-        mapRegion = MKCoordinateRegion(
-            center: location.coordinates,
-            span: mapSpan
-        )
+        withAnimation(.easeInOut) {
+            mapRegion = MKCoordinateRegion(
+                center: location.coordinates,
+                span: mapSpan)
+        }
     }
     
     func toggleLocationList() {
