@@ -9,12 +9,21 @@ import SwiftUI
 
 struct LocationPreviewView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 16) {
+            
+            ZStack {
+                if let imageName = location.imageNames.first {
+                    Image(imageName)
+                }
+            }
+            
+            Text(location.name)
+        }
     }
 }
 
 struct LocationPreviewView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationPreviewView()
+        LocationPreviewView(location: LocationsDataService.locations.first!)
     }
 }
