@@ -17,6 +17,7 @@
 		8BF2C1452886908E0088F3E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF2C1442886908E0088F3E2 /* Preview Assets.xcassets */; };
 		8BF2C151288691580088F3E2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF2C150288691580088F3E2 /* Location.swift */; };
 		8BF2C154288691FC0088F3E2 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF2C153288691FC0088F3E2 /* LocationsDataService.swift */; };
+		CD103D4C28915081003E852E /* LocationMapAnnotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD103D4B28915081003E852E /* LocationMapAnnotionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		8BF2C1442886908E0088F3E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BF2C150288691580088F3E2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8BF2C153288691FC0088F3E2 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		CD103D4B28915081003E852E /* LocationMapAnnotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				8B57EB3A2887F67200C9FB7A /* LocationsView.swift */,
 				8B7DF2B7288BDAD800BAA75F /* LocationsListView.swift */,
 				8B7DF2BF288C2A1000BAA75F /* LocationPreviewView.swift */,
+				CD103D4B28915081003E852E /* LocationMapAnnotionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				8B7DF2B8288BDAD800BAA75F /* LocationsListView.swift in Sources */,
 				8B7DF2C0288C2A1000BAA75F /* LocationPreviewView.swift in Sources */,
 				8B57EB392887F57100C9FB7A /* LocationsViewModel.swift in Sources */,
+				CD103D4C28915081003E852E /* LocationMapAnnotionView.swift in Sources */,
 				8BF2C1402886908C0088F3E2 /* ContentView.swift in Sources */,
 				8B57EB3B2887F67200C9FB7A /* LocationsView.swift in Sources */,
 				8BF2C151288691580088F3E2 /* Location.swift in Sources */,
@@ -251,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -305,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -323,7 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mappy/Preview Content\"";
-				DEVELOPMENT_TEAM = 73DJK9R2PB;
+				DEVELOPMENT_TEAM = YVRTXCXQSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -352,7 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mappy/Preview Content\"";
-				DEVELOPMENT_TEAM = 73DJK9R2PB;
+				DEVELOPMENT_TEAM = YVRTXCXQSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

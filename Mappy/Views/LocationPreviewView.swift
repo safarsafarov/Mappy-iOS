@@ -24,12 +24,12 @@ struct LocationPreviewView: View {
         }
         .padding(20)
         .background(
-        RoundedRectangle(cornerRadius: 10)
-            .fill(.ultraThinMaterial)
-            .offset(y: 65)
+            RoundedRectangle(cornerRadius: 10)
+                .fill(.ultraThinMaterial)
+                .offset(y: 65)
         )
         .cornerRadius(10)
-        }
+    }
 }
 
 struct LocationPreviewView_Previews: PreviewProvider {
@@ -40,7 +40,7 @@ struct LocationPreviewView_Previews: PreviewProvider {
                 .padding()
         }
         .environmentObject(LocationsViewModel())
-      
+        
     }
 }
 
