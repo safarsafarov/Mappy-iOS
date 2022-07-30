@@ -59,6 +59,7 @@ extension LocationDetailView {
         .tabViewStyle(PageTabViewStyle())
     }
     
+    
     private var titleSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(location.name)
@@ -69,6 +70,8 @@ extension LocationDetailView {
                 .foregroundColor(.secondary)
         }
     }
+    
+    
     
     private var descriptionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -83,6 +86,7 @@ extension LocationDetailView {
             }
         }
     }
+    
     
     private var mapLayer: some View {
         Map(coordinateRegion: .constant(MKCoordinateRegion(
