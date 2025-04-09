@@ -53,7 +53,8 @@ extension LocationsView {
                             .font(.headline)
                             .foregroundColor(.primary)
                             .padding()
-                            .rotationEffect(Angle(degrees: vm.showLocationList ? 540 : 0))
+                            
+                            .rotationEffect(Angle(degrees: vm.showLocationList ? 590 : 0))
                     }
             }
             if vm.showLocationList {
